@@ -1,7 +1,16 @@
 import './App.css';
 import MetaData from "./Components/MetaData/MetaData"
+import { useState, useEffect } from 'react'
 
 export default function App() {
+
+  const [ dreams, setDreams ] = useState([])
+
+  useEffect(() => {
+    fetch('http://localhost:3000/dreams')
+      .then(response => response.json())
+      .then(dreamsApi => setDreams(dreamsApi))
+  }, [])
 
   const handleClick = (e) => {
     (e.target.style.width === '35px' || e.target.style.width === '')
