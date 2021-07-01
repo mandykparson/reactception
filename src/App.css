@@ -3,32 +3,65 @@
   --text-color: #888888;
   --altbackground-color: #282828;
 }
+
+* {
+  background-color: var(--background-color);
+}
 #dbjson {
   display: none;
 }
 .App {
-  display: flex;
   background-color: var(--background-color);
   color: var(--text-color);
+}
+
+.header {
+  padding-left: 1rem;
+  display: flex;
+}
+
+.sub-header {
+  display: flex;
+}
+
+.render-container{
+  width: 50%;
+}
+
+.meta-data{
+  display: flex;
+  width: 50%;
+}
+
+img {
+  width: 100%;
 }
 
 #app-main-content{
   display: flex;
   flex-direction: column;
+  padding-left: 45px;
 }
 
-.code-snapshots img{
- 
+.step-button {
+  color: var(--text-color);
+  background-color: var(--altbackground-color);
+  border: none;
+  padding: 30px 60px;
+  font-size: 3vh;
+  border-radius: 50px;
+  margin: 2rem;
 }
 
 #slide {
   background-color: var(--altbackground-color);
   padding-right: 1rem;
+  position: fixed;
   text-align: center;
-  height: 100vh;
+  height: 100%;
   width: 35px;
   writing-mode: vertical-rl;
-  color: white;
+  color: var(--text-color);
   text-orientation: mixed;
   transition:             width 500ms ease;
       -moz-transition:    width 500ms ease;
