@@ -24,6 +24,13 @@ export default function App() {
     }
   }
 
+  const rideTheKick = (dreamToLeave) => {
+    const filteredDreams = dreams.filter(dream => {
+      return dream !== dreamToLeave
+    })
+    setDreams(filteredDreams)
+  }
+
   return (
     <div className="App">
       <div id="slide" onClick={ handleClick }>
@@ -51,6 +58,8 @@ export default function App() {
     </div>
   );
 }
+
+
 
 
 

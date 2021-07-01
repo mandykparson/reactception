@@ -13,13 +13,13 @@ export default class MetaData extends Component {
             },
             {
                 name: "import state",
-                list_items: ["Line 3: Importing useState and useEffect from react in order to use a hooks", "Line 7: Declaring our state of Dreams and giving it a value of [] in the useState function. We also give ourselves a method for changing dreams", "Lines 9-13: UseEffect allows us to populate our state of dreams from our db.json", "Ultimately what we're going to do is render all of the dreams we are currently in to the screen", "For our next trick, we're going to make a method that let's us rideTheKick back up a level of dreaming. This will remove one of our dreams from the sequence", "Feel free to take a 162 minute break to watch Inception so you understand all the references. It's not important that you do, except that it is."],
-                images: ["https://i.imgur.com/qU4xydO.png"]
+                list_items: ["Line 3: Importing useState and useEffect from react in order to use a hooks", "Line 7: Declaring our state of Dreams and giving it a value of [] in the useState function. We also give ourselves a method for changing dreams", "Lines 9-13: UseEffect allows us to populate our state of dreams from our db.json", "Ultimately what we're going to do is render all of the dreams we are currently in to the screen", "For our next trick, we're going to make a method that let's us rideTheKick back up a level of dreaming. This will remove one of our dreams from the sequence", "Feel free to take a 162 minute break to watch Inception so you understand all the references. It's not important that you do, except that it is", "We'll collapse our handleClick function on lines 15-25 for the next step"],
+                images: ["https://i.imgur.com/eGUof6v.png"]
             },
             {
                 name: "create method",
-                list_items: ["seven", "eight", "nine"],
-                images: ["one", "two", "three"]
+                list_items: ["Lines 28-33: rideTheKick takes in an argument and compares that argument to the state of dreams.", "Using .filter allows us to take out the dream we'd like to get kicked out of and saves the rest", "None of this is persistant", "If want persistance you should collab with me!"],
+                images: ["https://i.imgur.com/3JGuUNz.png"]
             },
             {
                 name: "create components",
@@ -32,7 +32,7 @@ export default class MetaData extends Component {
                 images: []
             },
             {
-                name: "pass down state",
+                name: "pass down state and method",
                 list_items: ["one", "two", "three"],
                 images: []
             },
