@@ -1,10 +1,12 @@
 import './App.css';
 import MetaData from "./Components/MetaData/MetaData"
 import { useState, useEffect } from 'react'
+import Dream from "./Components/PublicData/Dream"
 
 export default function App() {
 
   const [ dreams, setDreams ] = useState([])
+  // const [ count, setCount ] = useState(1)
 
   useEffect(() => {
     fetch('http://localhost:3000/dreams')
@@ -12,11 +14,19 @@ export default function App() {
       .then(dreamsApi => setDreams(dreamsApi))
   }, [])
 
+//   const increaseCount = () => {
+//     if (count <= 5) {
+//         setCount({count: count + 1})
+//     } else {
+//         setCount({count: 1})
+//     }
+// }
   const handleClick = (e) => {
     (e.target.style.width === '35px' || e.target.style.width === '')
         ? e.target.style.width = 'fit-content' 
         : e.target.style.width = '35px';
-    const db_json = e.target.childNodes[1]
+    let db_json = e.target.childNodes[1]
+    console.log(db_json)
     if (db_json.style.display === "block") {
       db_json.style.display = "none";
     } else {
@@ -36,7 +46,7 @@ export default function App() {
       <div id="slide" onClick={ handleClick }>
         Access db.json
         <div id="dbjson">
-          <img src="https://i.imgur.com/N14u1t5.png" alt="source: imgur.com" />
+          <img src="https://i.imgur.com/ENiCA99.png" alt="source: imgur.com" />
         </div>
       </div>
       <div id="app-main-content">
@@ -48,7 +58,7 @@ export default function App() {
         </div>
         <div className="sub-header">
           <div className="render-container">
-            {/* this is where we'll put stuff */}
+            <Dream dreams={dreams} rideTheKick={rideTheKick}/>
           </div>
           <div className="meta-data">
             <MetaData /> 

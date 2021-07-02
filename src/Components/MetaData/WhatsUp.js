@@ -1,5 +1,5 @@
 import React from 'react'
-// import { useState } from 'react'
+
 
 export default function WhatsUp(props) {
 
@@ -10,7 +10,7 @@ export default function WhatsUp(props) {
     }    
 
     return (
-        <div>
+        <div className="whats-up">
             <h2>What's Going On</h2>
             <ul>
                 { renderListItems() }
@@ -19,6 +19,7 @@ export default function WhatsUp(props) {
     )
     
 }
+
 
 
 

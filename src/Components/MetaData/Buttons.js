@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 export default function Buttons(props) {
 
-    const [steps ] = useState(() => props.progression.map(item => {
+    const [steps] = useState(() => props.progression.map(item => {
         return item.name
     }));
     

@@ -23,30 +23,28 @@ export default class MetaData extends Component {
             },
             {
                 name: "create components",
-                list_items: ["one", "two", "three"],
-                images: []
+                list_items: ["The barebones of these components are all the same", "Let's connect them up and then add some functionality to them by passing down state and our method", "Do we really NEED to have the WithinADream Componenet? For the purposes of making this app come full circle on the Inception thing, yes we do. For the purposes of creating clean code, we absolutely do not."],
+                images: ["https://i.imgur.com/jzSnKmW.png", "https://i.imgur.com/RgR4dre.png", "https://i.imgur.com/xrCBOnD.png"]
             },
             {
                 name: "connect components",
-                list_items: ["one", "two", "three"],
-                images: []
+                list_items: ["Every parent imports only one child because that child has imported their child and so on and so forth", "The import is a darker blue because it has not been called yet", "We need to call them in order to pass down state, props, and our method"], 
+                images: ["https://i.imgur.com/TCGQmCN.png", "https://i.imgur.com/ZBDTqUE.png", "https://i.imgur.com/PslXTeo.png", "https://i.imgur.com/DTlM7xE.png"]
             },
             {
                 name: "pass down state and method",
-                list_items: ["one", "two", "three"],
-                images: []
+                list_items: ["App.js Line 52: We call the Dream component and pass the state of dreams and the method of rideTheKick into it", "Dream.js Line 4: The function dream accepts those props as an argument", "Dream.js Line 7: We call the WithinADream component and pass the state of dreams and the method of rideTheKick into using dot notation", "WitinADream.js Line 4: The function dream accepts those props as an argument", "WithinADream.js Lines 6-10: We call the DreamCard Component for every dream object inside the dream state. We do this by using the .map function that can be called on any array. Semantically, it reads: for every dream return a dream card. We can pass down the nested information in the dreams array this way to DreamCard", "WithinADream.js Line 14: We call renderDreamCards and invoke it because we want that to happen immediately", "We now have our four dreams rendering to the screen and they can be removed by cliking Ride The Kick"],
+                images: ["https://i.imgur.com/arqybm3.png", "https://i.imgur.com/nWcNGyx.png", "https://i.imgur.com/1S4GjpN.png", "https://i.imgur.com/dyVMs7j.png"]
             },
             {
-                name: "pass down method",
-                list_items: ["one", "two", "three"],
-                images: []
+                name: "start over"
             }
         ],
         count: 1
     }
 
     increaseCount = () => {
-        if (this.state.count < 6) {
+        if (this.state.count <= 5) {
             this.setState({count: this.state.count + 1})
         } else {
             this.setState({count: 1})

@@ -10,6 +10,10 @@
 #dbjson {
   display: none;
 }
+
+#dbjson img {
+  pointer-events: inherit;
+}
 .App {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -23,14 +27,53 @@
 .sub-header {
   display: flex;
 }
+.dream {
+  margin-left: 40px;
+  margin-right: 40px;
+  border: solid var(--altbackground-color)
+}
+
+.dream p {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
 
 .render-container{
   width: 50%;
 }
 
+.within-a-dream {
+  display: flex;
+  flex-wrap: wrap;
+  /* display: none; */
+}
+
+.dreamcard {
+  width: 40%;
+  margin: 1rem;
+  border: solid var(--text-color);
+}
+
+.dreamcard #text-container {
+  padding: 1rem;
+}
+
+.dreamcard #ride-the-kick-button {
+  color: var(--text-color);
+  background-color: var(--altbackground-color);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+}
+
 .meta-data{
   display: flex;
   width: 50%;
+  padding-right: 2rem;
+}
+
+.whats-up {
+  height: 35vh;
 }
 
 img {

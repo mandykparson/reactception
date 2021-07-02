@@ -2,27 +2,36 @@
     "dreams": [
         {
             "level": 1,
+            "name": "The Van Dream",
             "dreamer": "Yusuf",
             "architect": "Ariadne",
-            "subject": "Fisher Jr."
+            "subject": "Fisher Jr.",
+            "image": "https://i.imgur.com/0BhUAXD.png?1"
         },
         {
             "level": 2,
+            "name": "The Hotel Dream",
             "dreamer": "Arthur",
             "architect": "Ariadne",
-            "subject": "Fisher Jr."
+            "subject": "Fisher Jr.",
+            "image": "https://i.imgur.com/cl4cOyy.png?1"
         },
         {
             "level": 3,
+            "name": "The Mother Russia Dream",
             "dreamer": "Eams",
             "architect": "Ariadne",
-            "subject": "Fisher Jr." 
+            "subject": "Fisher Jr.",
+            "image": "https://i.imgur.com/EpAfsJV.png"
         },
         {
             "level": 4,
+            "name": "The Final Dream",
             "dreamer": "Cobb",
             "architect": "Cobb",
-            "subject": "Fisher Jr."
+            "subject": "Fisher Jr.",
+            "image": "https://i.imgur.com/4R0UzEE.png"
         }
     ]
 }
+
