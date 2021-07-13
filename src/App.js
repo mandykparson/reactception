@@ -1,12 +1,15 @@
 import './App.css';
 import MetaData from "./Components/MetaData/MetaData"
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Dream from "./Components/PublicData/Dream"
+
 
 export default function App() {
 
   const [ dreams, setDreams ] = useState([])
   // const [ count, setCount ] = useState(1)
+
+  const dbjsonRef = useRef(null)
 
   useEffect(() => {
     fetch('http://localhost:3000/dreams')
@@ -25,7 +28,7 @@ export default function App() {
     (e.target.style.width === '35px' || e.target.style.width === '')
         ? e.target.style.width = 'fit-content' 
         : e.target.style.width = '35px';
-    let db_json = e.target.childNodes[1]
+    let db_json = dbjsonRef.current
     console.log(db_json)
     if (db_json.style.display === "block") {
       db_json.style.display = "none";
@@ -45,7 +48,7 @@ export default function App() {
     <div className="App">
       <div id="slide" onClick={ handleClick }>
         Access db.json
-        <div id="dbjson">
+        <div id="dbjson" ref={dbjsonRef}>
           <img src="https://i.imgur.com/ENiCA99.png" alt="source: imgur.com" />
         </div>
       </div>
